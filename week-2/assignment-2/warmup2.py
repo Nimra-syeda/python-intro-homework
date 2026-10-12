@@ -1,0 +1,5 @@
+date = input("Enter today's date:")
+month =input("Enter the current month name:")
+month =month.capitalize()
+year = input("Enter the current year:")
+print(f"You said today is {month} {date}, {year}")
