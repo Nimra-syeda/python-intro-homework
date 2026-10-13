@@ -1,5 +1,13 @@
-date = input("Enter today's date:")
-month =input("Enter the current month name:")
-month =month.capitalize()
-year = input("Enter the current year:")
-print(f"You said today is {month} {date}, {year}")
+#Navigation command I used: 
+# cd Documents/CTD
+# ls 
+#cd python-intro-homework
+#cd week-2
+#cd assignment-2
+#pwd
+#ls
+#python warmup2.py
+
+
+date = input("What is today's date?: ")
+print("You said today is " +date)
