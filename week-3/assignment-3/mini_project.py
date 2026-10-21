@@ -5,7 +5,7 @@ time = input("What time of day?").strip().lower()
 if day == "monday"  and time == "morning":
     print("Suggestion: Great Time to learn.")
 elif day == "monday" and time == "afternoon":
-    print("Suggestion:  ")
+    print("Suggestion: Have lunch.")
 elif day == "monday" and time == "evening":
     print("Suggestion: Time to Excercise.")
 elif day == "tuesday" and time == "morning":
