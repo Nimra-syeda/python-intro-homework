@@ -4,13 +4,13 @@ choice = 0
 
 while choice != 5:
     try:
-        print("=== Number Cruncher ===")
+        print("\n=== Number Cruncher ===")
         print("1. Find minimum")
         print("2. Find maximum")
         print("3. Search for a number")
         print("4. Sort the list")
         print("5. Quit")
-        choice = int(input("Choose an option (1-5): "))
+        choice = int(input("\nChoose an option (1-5): "))
  
 # Find minimum — loop through the list and track the smallest value. Do not use Python's built-in min().
         if choice == 1:

@@ -1,10 +1,9 @@
+#Linear Search
 # Start with a hardcoded list of names. Ask the user to enter a name. 
-# Loop through the list and print whether the name was found 
-# and at what index — 
-# or a not-found message if it isn't in the list
-students =['Sarah','John','Mary','Amy','Jazmine']
-name  = input("Enter the name to search for : ").strip().capitalize()
-index = -1 
+
+students =['sarah','john','mary','amy','jazmine']
+name  = input("Enter the name to search for : ").strip().lower()
+index = -1 # initialize the index to -1 "not found"
 for i in range(len(students)):
     if students[i] == name:
        index = i
