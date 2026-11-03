@@ -34,6 +34,7 @@ while choice != 5:
           if numbers[i] == target:
             index = i
             print("Number found at index:", index)
+            break
        if index ==-1:
           print("Number not found")
  # Sort — implement bubble sort
