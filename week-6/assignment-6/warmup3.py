@@ -9,8 +9,8 @@
 # NameError: name 'add' is not defined
 
 def add_number():
-    
-    add = 5+5
-    return add
+     """Return the add variable value to the function"""
+     add = 5+5
+     return add
 result = add_number()
 print(result)

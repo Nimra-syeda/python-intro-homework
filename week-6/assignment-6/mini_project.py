@@ -1,4 +1,4 @@
-
+# Mini project- Refactor the Number Cruncher
 numbers = [42, 17, 83, 5, 61, 29, 74, 8, 55, 93, 31, 66, 14, 47, 78, 3, 59, 22, 86, 40]
 
 def show_menu():
@@ -14,6 +14,8 @@ def show_menu():
 # numbers = [42, 17, 83, 5, 61, 29, 74, 8, 55, 93, 31, 66, 14, 47, 78, 3, 59, 22, 86, 40]
 
 def find_min(numbers):
+    """Return the smallest number
+    in the list without changing it."""
     smallest = numbers[0]
     for i in range (len(numbers)):
         if  numbers[i] < smallest:
@@ -21,6 +23,9 @@ def find_min(numbers):
     return smallest
 
 def find_max(numbers):
+    """Return the maximum number 
+    with out changing the list. """
+    
     largest =numbers[0]
     for i in range(len(numbers)):
         if numbers[i] >largest:
@@ -28,11 +33,15 @@ def find_max(numbers):
     return largest  
 
 def search(numbers, target):
+    """Return the index of target in the list, 
+    or -1 if it isn't found."""
     for i in range(len(numbers)):
         if numbers[i]==target:
             return i
     return  -1      
 def bubble_sort(numbers):
+    """Return a sorted copy of the list using bubble sort,
+    leaving the original unchanged."""
     sorted_numbers= numbers.copy()
     swapped = True
     while swapped:
@@ -60,7 +69,7 @@ def main():
             print(f"\nFound at index {index}.")
         else:
             print()
-            print(index)
+            print("Not found")
     elif answer == "4":
         print()
         print(f"Sorted list: {bubble_sort(numbers)}")
