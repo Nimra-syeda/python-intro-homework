@@ -11,8 +11,6 @@ def show_menu():
     choice = input("\nChoose an option (1-5): ")
     return choice     
 
-# numbers = [42, 17, 83, 5, 61, 29, 74, 8, 55, 93, 31, 66, 14, 47, 78, 3, 59, 22, 86, 40]
-
 def find_min(numbers):
     """Return the smallest number
     in the list without changing it."""

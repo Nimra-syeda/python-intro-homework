@@ -1,11 +1,12 @@
 # Warmup-2 Functions that return values
 
 def celsius_to_fahrenheit(celsius):
-    """Return send the fahrenheit value to function"""
+    """Convert a temperature from Celsius to Fahrenheit."""
 
     fahrenheit = celsius * 9/5 + 32
     return fahrenheit
 def fahrenheit_to_celsius(fahrenheit):
+    """converts a temperature from Fahrenheit to Celsius"""
     celsius =(fahrenheit-32)*5/9
     return celsius
 
