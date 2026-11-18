@@ -20,7 +20,7 @@ else:
     
        
     total= sum(row['amount'] for row in food_expenses)
-    print(f"Total Food expenses: ${total}")
+    print(f"Total Food expenses: ${total:.2f}")
     
     
 report = 'food_report.txt'
