@@ -33,7 +33,7 @@ with open(report, 'w') as f:
     f.write(f"Total:      ${total:.2f}")
     
     
-#Optional Task: Write the transport report to a file    
+    #Optional Task: Write the transport report to a file    
     transport_expenses =[row for row in expenses if row['category']== "Transport"]
     total_transport = sum (row['amount'] for row in transport_expenses)
 
