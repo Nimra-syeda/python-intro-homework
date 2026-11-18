@@ -22,15 +22,14 @@ else:
     total= sum(row['amount'] for row in food_expenses)
     print(f"Total Food expenses: ${total:.2f}")
     
+    report = 'food_report.txt'
+    with open(report, 'w') as f:
+        f.write(f"Food Expense Report — generated {datetime.now().strftime('%B %d, %Y')}\n")
     
-report = 'food_report.txt'
-with open(report, 'w') as f:
-    f.write(f"Food Expense Report — generated {datetime.now().strftime('%B %d, %Y')}\n")
-    
-    for row in food_expenses:
-        f.write(f"{row['date']}: ${row['amount']:.2f}\n")
+        for row in food_expenses:
+            f.write(f"{row['date']}: ${row['amount']:.2f}\n")
 
-    f.write(f"Total:      ${total:.2f}")
+        f.write(f"Total:      ${total:.2f}")
     
     
     #Optional Task: Write the transport report to a file    
@@ -42,5 +41,6 @@ with open(report, 'w') as f:
     with open(report_2, 'w') as f:
         f.write(f"Transport expense Report - generated {datetime.now().strftime('%B %d, %Y')}\n")
         for row in transport_expenses:
-           f.write(f"{row['date']}: ${row['amount']:.2f}\n")
+            f.write(f"{row['date']}: ${row['amount']:.2f}\n")
         f.write(f"Total:      ${total_transport:.2f}")
+        
