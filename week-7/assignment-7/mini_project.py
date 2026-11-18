@@ -34,13 +34,13 @@ with open(report, 'w') as f:
     
     
 #Optional Task: Write the transport report to a file    
-transport_expenses =[row for row in expenses if row['category']== "Transport"]
-total_transport = sum (row['amount'] for row in transport_expenses)
+    transport_expenses =[row for row in expenses if row['category']== "Transport"]
+    total_transport = sum (row['amount'] for row in transport_expenses)
 
 
-report_2= 'transport_report.txt'
-with open(report_2, 'w') as f:
-    f.write(f"Transport expense Report - generated {datetime.now().strftime('%B %d, %Y')}\n")
-    for row in transport_expenses:
-        f.write(f"{row['date']}: ${row['amount']:.2f}\n")
-    f.write(f"Total:      ${total_transport:.2f}")
+    report_2= 'transport_report.txt'
+    with open(report_2, 'w') as f:
+        f.write(f"Transport expense Report - generated {datetime.now().strftime('%B %d, %Y')}\n")
+        for row in transport_expenses:
+           f.write(f"{row['date']}: ${row['amount']:.2f}\n")
+        f.write(f"Total:      ${total_transport:.2f}")
