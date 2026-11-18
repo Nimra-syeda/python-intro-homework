@@ -16,10 +16,10 @@ else:
        row['amount'] = float(row['amount'])
    
     
-    list = [row for row in expenses if row['category']== "Food"]
+    food_expenses = [row for row in expenses if row['category']== "Food"]
     
        
-    total= sum(row['amount'] for row in list)
+    total= sum(row['amount'] for row in food_expenses)
     print(f"Total Food expenses: ${total}")
     
     
@@ -27,20 +27,20 @@ report = 'food_report.txt'
 with open(report, 'w') as f:
     f.write(f"Food Expense Report — generated {datetime.now().strftime('%B %d, %Y')}\n")
     
-    for row in list:
+    for row in food_expenses:
         f.write(f"{row['date']}: ${row['amount']:.2f}\n")
 
     f.write(f"Total:      ${total:.2f}")
     
     
 #Optional Task: Write the transport report to a file    
-transport_list =[row for row in expenses if row['category']== "Transport"]
-total_transport = sum (row['amount'] for row in transport_list)
+transport_expenses =[row for row in expenses if row['category']== "Transport"]
+total_transport = sum (row['amount'] for row in transport_expenses)
 
 
 report_2= 'transport_report.txt'
 with open(report_2, 'w') as f:
     f.write(f"Transport expense Report - generated {datetime.now().strftime('%B %d, %Y')}\n")
-    for row in transport_list:
+    for row in transport_expenses:
         f.write(f"{row['date']}: ${row['amount']:.2f}\n")
     f.write(f"Total:      ${total_transport:.2f}")

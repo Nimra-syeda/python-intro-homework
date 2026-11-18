@@ -5,9 +5,9 @@ print(os.getcwd())
 
 path =os.path.exists('../data/expenses.csv')
 if path:
-    print("expenses.csv found")
+    print("expenses.csv found.")
 else:
-    ("expenses.csv not found")
+    print("expenses.csv not found.")
 
 join=os.path.join("..","data","expenses.csv")
 print(join)
